@@ -1,0 +1,6 @@
+1) ogni volta che un gruppo viene creato, il web socket server deve essere informato
+2) per ogni richiesta si deve contrllare che session.logged.auth_id sia uguale a quello mandato
+3) quando i messaggi arrivano di un altro contatto mi deve mostrare che sono arrivati nuovi messaggi
+4) quando richiedo i messaggi non devono arrivare tutti, ma una parte 
+5) quando mi loggo con lo stesso account, il web socket server manda "exit now", react appena lo riceve manda una richiesta di logout a django, quando django risponde react usa 'navigate("/")'
+6) fare in modo che appaia il messaggio "nuovi messaggi" quando mi trovo in alto

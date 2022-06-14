@@ -1,0 +1,87 @@
+.user_div_button{
+    width: 90%;
+    min-height: 70px;
+    background-color: rgb(79, 164, 255);
+    /* border-top: 1px solid black; */
+    /* border-bottom: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px  rgb(31, 31, 31);
+    font-family: Poppins;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.user_div_button:hover{
+    background-color: rgb(57, 151, 252);
+}
+
+.avatar_user_div{
+    min-width: 70px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_div_info{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar_user_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.user_div_button_arrow{
+    position: absolute;
+    transform: translate(300px);
+    transition: ease-in-out 0.2s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    z-index: 0;
+}
+
+.user_div_button_arrow_sett_toggle{
+    transform: translate(130px);
+}
+
+.user_div_button_arrow_sett{
+    width: 30px;
+    height: 30px;   
+}
+
+.setting_fade_in{
+    animation-name: fadein;
+    animation-duration: 0.5s;   
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.setting_fade_out{
+    animation-name: fadeout;
+    animation-duration: 0.5s;   
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
